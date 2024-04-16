@@ -14,8 +14,9 @@ This application uses Java 17, Springboot 3.2.4, Maven 3.9.5 and Docker.
 ### How to set up? ###
 
 1. Start up Docker
-2. Run the Docker Compose file inside the docker package (This will start up the PostgreSQL database image)
-3. Run the application from an IDE of your choice e.g IntelliJ
+2. In your terminal, navigate to the root directory of the project
+3. Run this command to build the docker image: `docker build -t wallet-app.`
+4. Run this command to run the docker compose: `docker compose -f docker-compose.yml up -d`
 
 ### How to run the Application. Happy Flow ###
 
