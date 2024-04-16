@@ -13,7 +13,7 @@ This application uses Java 17, Springboot 3.2.4, Maven 3.9.5 and Docker.
 
 ### How to set up? ###
 
-1. First run following command `mvn clean package` to build the jar file
+1. First run the following command `mvn clean package` to build the jar file
 2. Start up Docker
 3. In your terminal, navigate to the root directory of the project
 4. Run this command to build the docker image: `docker build -t wallet-app.`
