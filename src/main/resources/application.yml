@@ -1,0 +1,36 @@
+# Logging Configuration
+logging:
+    file:
+        name: logs/wallet.log
+    level:
+        root: INFO
+        org.springframework.web: DEBUG
+        io:
+            basaltx:
+                wallet: INFO
+    pattern:
+        rollingPolicy:
+        console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+        file: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+        maxHistory: 20
+
+# Server Configuration
+server:
+    port: 8989
+    servlet:
+        context-path: /wallet
+
+# Spring Configuration
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/wallet-app_db
+        username: wallet_app_user
+        password: wallet_app_password
+        driverClassName: org.postgresql.Driver
+    jpa:
+        hibernate:
+            show-sql: true
+
+
+
+
