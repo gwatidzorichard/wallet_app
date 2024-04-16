@@ -19,8 +19,8 @@ This application uses Java 17, Springboot 3.2.4, Maven 3.9.5 and Docker.
 
 ### How to run the Application. Happy Flow ###
 
-* First create a user by sending a request via the registerUser endpoint (the postman collection is inside the resources package)
-* Use the same username and password to login via the login endpoint
+* First create a user by sending a request via the `registerUser` endpoint (the postman collection is inside the resources package)
+* Use the same username and password to login via the `login` endpoint
 * The request above will return a token that will be required for authentication to access other secured endpoints (only registerUser and login endpoints are unsecured)
 * Insert the token under Authorization - Bearer in postman and try out other endpoints as required
 * Flyway automatically inserts 2 records into the (users and user_accounts tables)
