@@ -23,7 +23,7 @@ server:
 # Spring Configuration
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/wallet-app_db
+        url: jdbc:postgresql://postgres-db:5432/wallet-app_db
         username: wallet_app_user
         password: wallet_app_password
         driverClassName: org.postgresql.Driver
