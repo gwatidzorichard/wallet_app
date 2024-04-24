@@ -17,7 +17,7 @@ services:
     networks:
       - wallet-network
 
-
+  ## wallet_service
   wallet-app:
     container_name: wallet-container
     image: wallet-app
